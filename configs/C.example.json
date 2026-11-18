@@ -1,0 +1,27 @@
+{
+  "currency": "USD",
+  "taxonomy": "taxonomy_C.csv",
+  "levels": [
+    "category_l1",
+    "category_l2",
+    "category_l3",
+    "category_l4"
+  ],
+  "sources": [
+    {
+      "file": "invoice_lines.csv",
+      "id": "line_id",
+      "description": [
+        "line_description"
+      ],
+      "supplier": "supplier_name",
+      "item": "material_number",
+      "amount": "line_amount",
+      "currency": "currency",
+      "rate": "currency_rate",
+      "date": "invoice_date",
+      "status": "status",
+      "account": "gl_account_description"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "currency": "USD",
+  "taxonomy": "taxonomy_B.csv",
+  "levels": [
+    "category_l1",
+    "category_l2",
+    "category_l3"
+  ],
+  "labels": "seed_labels.csv",
+  "label_id": "line_id",
+  "fx": "fx_rates_usd.csv",
+  "sources": [
+    {
+      "file": "invoice_lines.csv",
+      "id": "line_id",
+      "description": [
+        "line_description"
+      ],
+      "context": [
+        "gl_account_description",
+        "gl_account",
+        "transport_flag"
+      ],
+      "account": "gl_account_description",
+      "currency": "currency",
+      "rate": "currency_rate",
+      "date": "invoice_date",
+      "fallback_date": "posting_date",
+      "supplier": "vendor_id",
+      "item": "material_number",
+      "amount": "line_amount"
+    }
+  ]
+}
