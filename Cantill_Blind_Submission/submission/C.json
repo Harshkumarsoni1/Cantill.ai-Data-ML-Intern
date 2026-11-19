@@ -1,0 +1,35 @@
+{
+  "currency": "USD",
+  "taxonomy": "category_tree_C.csv",
+  "levels": [
+    "level_1",
+    "level_2",
+    "level_3",
+    "level_4"
+  ],
+  "non_procurement": "\\b(intercompany|inter company|i c payable|sales tax|income tax|withholding tax|ad valorem tax(?:es)?|severance tax(?:es)?|impact fee other tax|vat payable|royalt(?:y|ies)|partner billings?|joint interest billing|ar jib deposits clearing|miscellaneous receivable|employee deductions payable|financ(?:ing|e) (?:charges?|costs?)|interest expense|revenue)\\b",
+  "sources": [
+    {
+      "file": "invoice_lines.csv",
+      "id": "line_id",
+      "description": [
+        "line_description",
+        "product_service_description"
+      ],
+      "context": [
+        "gl_account_description",
+        "invoice_description"
+      ],
+      "item": "product_service_code",
+      "supplier": "supplier_name",
+      "amount": "line_amount_usd",
+      "status": "status",
+      "date": "invoice_date",
+      "date_formats": [
+        "%m/%d/%Y",
+        "%Y-%m-%d"
+      ],
+      "account": "gl_account_description"
+    }
+  ]
+}
